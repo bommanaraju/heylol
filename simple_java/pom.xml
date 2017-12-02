@@ -4,9 +4,20 @@
   <groupId>org.sonatype.mavenbook</groupId>
   <artifactId>simple_java</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>simple_java</name>
   <url>http://maven.apache.org</url>
+  
+  <distributionManagement>
+      <repository>
+          <id>releases</id>
+          <url>http://localhost:9090/nexus-2.14.5-02/content/repositories/releases/</url>
+      </repository>
+      <snapshotRepository>
+          <id>snapshots</id>
+          <url>http://localhost:9090/nexus-2.14.5-02/content/repositories/snapshots/</url>
+      </snapshotRepository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
